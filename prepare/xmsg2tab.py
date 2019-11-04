@@ -21,13 +21,14 @@ path_tab = path_parent+"/tab/"
 # get filename
 path_msg_files = os.listdir(path_msg)
 for filename_in in path_msg_files:
-    #filename_in  = "rIM1ap02.msg"
+    filename_in  = "exp1vp02.msg"
     filename_short=filename_in[0:8]
     filename_out = filename_short
     filename_out +=  ".txt"
     filename_out = os.path.join(path_tab,filename_out)
     filename_in = os.path.join(path_msg,filename_in)
 
+    print(filename_short)
     # open a file
     f_tmp = open(filename_in,'r')
     print(filename_short)
